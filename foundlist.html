@@ -1,5 +1,6 @@
 <h3>{{title}}</h3>
 <ol>
-  <li ng-repeat='item in items'><strong>{{item.name}}</strong> <br> Description: {{item.description}} <br> Short name: {{item.short_name}} <button ng-click='onRemove({index: $index});'>Remove Item</button>
+  <li ng-repeat='item in items'><strong>{{item.name}}</strong> <button ng-click='onRemove({index: $index});'>Don't want see this!</button> <br> Description: {{item.description}} <br> Short name: {{item.short_name}} 
+
   </li>
 </ol>

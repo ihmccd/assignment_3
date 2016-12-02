@@ -34,7 +34,7 @@ function MenuSearchService($http,ApiBasePath) {
 		var searchArr=result.data.menu_items;
 		searchArr.forEach(function(element){
 				//console.log(element,element.name.toLowerCase(), searchTerm);
-			if(element.name.toLowerCase().indexOf(searchTerm.toLowerCase())!=-1){
+			if(element.description.toLowerCase().indexOf(searchTerm.toLowerCase())!=-1){
 				foundArr.push(element);
 			}
 			//console.log(foundArr);
